@@ -1,0 +1,133 @@
+/*Maria Pop 8416653*/ 
+/*Remember to open git bash from inside tasks*/
+
+/*has style (normal, italic), variant (normal, small caps), weight (light, bold, 100-900), size, line hieght, font family*/
+body{
+    font : normal normal normal 12px/1.5 Arial, Helvetica, sans-serif;
+    /*12px/1.5 put slash to not confuse the program?*/
+
+    width: 100vw;
+    height: 100vh;
+    /*viewport is percentage of screen that user is using to view website (don't use %)*/
+
+    background-color: hsla(45, 72%, 89%, 0.884);
+    /*hue (on a scale), saturation (how much), lightness (how light), alpha (decimal under one, transparency)*/
+}
+
+h1{
+    color: green;
+    font-size:30px;
+}
+
+h2{
+    color: rgb(53, 95, 46);
+    font-size: 2em;
+}
+
+header{
+    background-color: hsl(332, 25%, 85%);
+}
+
+nav ul li{
+    display: inline;
+    list-style-type: none;
+}
+
+nav ul li a{
+    color: indigo;
+    border: 2px solid indigo;
+    background-color: cornsilk;
+    text-decoration: none;
+    padding: 5px;
+}
+
+nav ul li a:hover{
+    color: cornsilk;
+    background-color: indigo;
+    border-color: cornsilk;
+}
+
+/*Change main and aside format*/
+main{
+    float: left;
+    width: 65vw; /*65% of the screen/viewport*/
+    background-color: hsl(201, 60%, 83%);
+}
+
+aside{
+    float: right;
+    width: 25vw;
+    background-color: hsl(137, 64%, 79%);
+}
+
+/*Make aside descendants*/
+aside li{
+    list-style-type: square;
+    line-height: 2em;
+    color: rgba(236, 107, 52, 0.865);
+
+}
+aside a{
+    color: rgba(236, 107, 52, 0.865);
+}
+
+aside a:hover{
+    /*a:hover = a is all of the a elements (links) and hover is just a color changer when hovering over a link*/
+    color: #f02;
+}
+
+footer{
+    clear: both;
+    background-color: hsl(257, 82%, 85%);
+}
+
+.structural{
+    margin: 10px;
+    padding: 10px;
+    border: 5px solid rgb(238, 172, 172);
+}
+
+#para1{
+    color: rgb(42, 106, 26);
+}
+
+#para2{
+    color: rgb(90, 19, 129);
+}
+
+form{
+    border: 5px dashed cornsilk;
+    padding: 5px;
+}
+
+input[type=text], input[type=email], input[type=submit], select, option{
+    display: block;
+    width: 50%;
+    height: 2em;
+}
+
+input[type=radio], input[type=checkbox]{
+    height: 2em;
+    width: 2em;
+}
+
+select, option, label, legend, input[type=submit]{
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-variant: small-caps;
+}
+
+textarea{
+    display: block;
+    width: 50%;
+}
+
+fieldset{
+    border: none;
+}
+
+footer p{
+    font-size: .75em;
+}
+
+/*Don't run the program from a css file*/
